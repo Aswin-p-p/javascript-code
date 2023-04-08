@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var num=parseInt(prompt("enter the number"))
+        temp=num;
+        var sum=0;
+        var a;
+        while(temp>0)
+        {
+            a=temp%10
+            sum=sum+a*a*a
+            temp=parseInt(temp/10)
+        }
+        if(sum==num)
+        {
+        console.log(num,"is an amstong number");
+        }
+        else{
+        console.log(num,"is not an amstong nmber");
+        }
+        
+    </script>
+</body>
+</html>
